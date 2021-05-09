@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+		<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Perfect Pro</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	</head>
+
+	<body>
+		<!-- navber -->
+		<div class="navbar-color pl-3 pb-2">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			    <span class="navbar-toggler-icon"><i class="fa fa-bars" style="color:#f64072; font-size: 24px"></i></span>
+			</button>
+			<a class="navbar-brand nav-brand pt-2" href="index.html"><img src="images/logo.png" width="20" height="20">PERFECT PRO</a>
+		  	<div class="navdex">
+		  		<a class="ml-3 active-nav" href="index.html">HOME</a>
+		  		<a class="ml-3" href="content.html">PRODUCT</a>
+		  		<a class="ml-3" href="#">SERVICE</a>
+		  		<a class="ml-3" href="contact.html">CONTACT</a>
+			</div>
+			<i class="fa fa-user" style="font-size: 20px; color:#f64072;"></i>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			    <ul class="navbar-nav mr-auto">
+			      
+			    </ul>
+
+			    <ul class="navbar-nav my-2 my-lg-0">
+			      	<li class="nav-item active-nav">
+			        	<a class="nav-link" href="index.html">HOME</a>
+			      	</li>
+			      	<li class="nav-item">
+				        <a class="nav-link" href="content.html">PRODUCT</a>
+			      	</li>
+			      	<li class="nav-item">
+				        <a class="nav-link" href="#">SERVICE</a>
+			     	</li>
+			     	<li class="nav-item">
+				        <a class="nav-link" href="contact.html">CONTACT</a>
+			      	</li>
+			    </ul>
+			</div>
+		</div>
+
+		<!-- Slide -->
+		<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+		    	<li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+			    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+			    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+		  	</ol>
+		  	<div class="carousel-inner im">
+			    <div class="carousel-item active">
+			    	<!-- <div class="carousel-caption">
+				        <h5>First slide label</h5>
+				        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+			      	</div> -->
+			      	<img src="images/Slid_Photo1.jpg" class="d-block w-100" alt="...">
+			    </div>
+			    <div class="carousel-item">
+			      	<img src="images/Slid_Photo2.jpg" class="d-block w-100" alt="...">
+			    </div>
+			    <div class="carousel-item">
+			      	<img src="images/Slid_Photo3.jpg" class="d-block w-100" alt="...">
+			    </div>
+		  	</div>
+		  	<a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+			    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			    <span class="sr-only">Previous</span>
+		  	</a>
+		  	<a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+			    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+			    <span class="sr-only">Next</span>
+		  	</a>
+		</div>
+
+		<!-- BMI Head -->
+		<div class="text-center " style="background-color: #ff9faf; color: #fff;">
+			<h3 class="p-2">คำนวณหาค่า <span style="font-family: 'bebas_neueregular';">BMI</span></h3>
+		</div>
+
+		<h6 class="text-center" style="color: #f86e94;">การหาค่าดัชนีมวลกาย (Body Mass Index: BMI) คือมาตรการที่ใช้ <br> ประเมินภาวะอ้วนและผอมในผู้ใหญ่ ตั้งแต่อายุ 20 ปีขึ้นไป</h6>
+
+		<!-- BMI Form -->
+		<div class="p-4">
+		  	<div class="form-group">
+			    <label for="exampleInputEmail1" style="font-family: 'bebas_neueregular';color: #f64072;">WEIGHT (KG.)</label> 
+			    <input type="text" class="form-control" id="weightBmi" aria-describedby="emailHelp">
+		  	</div>
+		  	<div class="form-group">
+			    <label for="exampleInputEmail1" style="font-family: 'bebas_neueregular';color: #f64072;">HEIGHT (CM.)</label>
+			    <input type="text" class="form-control" id="heightBmi">
+		  	</div>
+		  	<div class="text-center">
+		  		<button type="submit" onclick="calculateBmi()" class="btn btn-pink">คำนวณ</button>
+		  		<input type="text" disabled="" id="valueBMI" class="input-pink" value="0">
+		  	</div>
+		</div>
+
+		<!-- BMI Table -->
+		<div class="p-4">
+			<table class="table table-bordered">
+			  	<thead>
+				    <tr>
+				      	<th scope="col" style="font-family: 'bebas_neueregular';">BMI KG/M2</th>
+				      	<th scope="col" class="tcen">อยู่ในเกณฑ์</th>
+				      	<th scope="col" class="tcen">ภาวะเสี่ยง</th>
+				    </tr>
+			  	</thead>
+			  	<tbody>
+				    <tr>
+				      	<td>น้อยกว่า 18.50</td>
+				      	<td class="tcen">น้ำหนักน้อย / ผอม</td>
+				      	<td class="tcen">มากกว่าคนปกติ</td>
+				    </tr>
+				    <tr>
+				      	<td>ระหว่าง 18.50 - 22.90</td>
+				      	<td class="tcen">ปกติ (สุขภาพดี)</td>
+				      	<td class="tcen">เท่าคนปกติ</td>
+				    </tr>
+				    <tr>
+				      	<td>ระหว่าง 23 - 24.90</td>
+				      	<td class="tcen">โรคอ้วนระดับ 1</td>
+				      	<td class="tcen">อันตรายระดับ 1</td>
+				    </tr>
+				    <tr>
+				      	<td>ระหว่าง 25 - 29.90</td>
+				      	<td class="tcen">โรคอ้วนระดับ 2</td>
+				      	<td class="tcen">อันตรายระดับ 2</td>
+				    </tr>
+				    <tr>
+				      	<td>มากกว่า 30</td>
+				      	<td class="tcen">โรคอ้วนระดับ 3</td>
+				      	<td class="tcen">อันตรายระดับ 3</td>
+				    </tr>
+			  	</tbody>
+			</table>
+		</div>
+		
+		<!-- serch -->
+		<div style="background-color: #ef3e6e;">
+			<div class="text-center " style="background-color: #ff9faf; color: #fff;">
+				<h3 class="p-2">ค้นหาเทรนเนอร์และฟิตเนส</h3>
+			</div>
+
+				<div class="p-4">
+					<div class="row">
+						<div class="col-md-4">
+							<input type="text" class="form-control form-white" placeholder="เพศ">
+						</div>
+						<div class="col-md-4">
+							<input type="text" class="form-control form-white" placeholder="สถานที่">
+						</div>
+						<div class="col-md-4">
+							<input type="text" class="form-control form-white" placeholder="อัตรจ้าง">
+						</div>
+						<div class="col-md-12 text-center mt-4">
+					  		<button type="submit" class="btn btn-pink">ค้นหา</button>
+					  	</div>
+					</div>
+					
+				</div>
+
+			<div class="p-4">
+				<!-- 1 -->
+				<div class="row fitness p-2 mb-2">
+					<div class="col-md-4 col-lg-2">
+						<img src="images/fitness1.jpg" width="200" height="150">
+					</div>
+					
+					<div class="col-md-7">
+						<h5 style="text-decoration: underline;">The Cascade Club</h5>
+						<p>
+							Level 6 and 7 the ascott sathorn bangkok 7 south sathorn road, yannawa, sathorn, bangkok thailand
+							<br>
+							Tel: 02 676 6969
+							<br>
+							Fax: 02 676 6970
+						</p>
+					</div>								
+				</div>
+
+				<!-- 2 -->
+				<div class="row fitness p-2 mb-2">
+					<div class="col-md-4 col-lg-2">
+						<img src="images/fitness2.jpg" width="200" height="150">
+					</div>
+					
+					<div class="col-md-7">
+						<h5 style="text-decoration: underline;">Fitwhey</h5>
+						<p>
+							Fitwhey Gym Chiang Rai531 muu 2 tumbon ban tuu ching rai, thailand 57000
+							<br>
+							Every Day: 7.00 - 23.00
+							<br>
+							Tel: 061-685-0813
+						</p>
+					</div>								
+				</div>
+
+				<!-- 3 -->
+				<div class="row fitness p-2 mb-2">
+					<div class="col-md-4 col-lg-2">
+						<img src="images/fitness3.jpg" width="200" height="150">
+					</div>
+					
+					<div class="col-md-7">
+						<h5 style="text-decoration: underline;">Virgin Active Thailand</h5>
+						<p>
+							99, 99/1 และ 99/2 หมู่ที่ 4 เซ็นทรัลเฟสติวัล เชียงใหม่
+							<br>
+							MOM - FAI: 7AM -10PM
+							<br>
+							SAT - SUN: 8AM - 9PM
+							<br>
+							Tel: 052 134999
+						</p>
+					</div>								
+				</div>
+
+				<!-- 4 -->
+				<div class="row fitness p-2 mb-2">
+					<div class="col-md-4 col-lg-2">
+						<img src="images/fitness4.jpg" width="200" height="150">
+					</div>
+					
+					<div class="col-md-7">
+						<h5 style="text-decoration: underline;">We Fitness</h5>
+						<p>
+							สาขาโรงแรมวี โฮเต็ล เลขที่ 117. โรงแรงวี โฮเต็ล ชั้น 9-10
+							<br>
+							จันทร์ - ศุกร์ : เวลา 6.00 - 22.00 น.
+							<br>
+							เสาร์ - อาทิตย์ : เวลา 6.00 - 21.00 น.
+							<br>
+							Tel: 02 309 3939
+						</p>
+					</div>								
+				</div>
+
+				<div class="col-md-12 text-center mt-4">
+			  		<button type="submit" class="btn btn-pink">เพิ่มเติม</button>
+			  	</div>
+			</div>
+		</div>
+
+		<!-- workout -->
+		<div class="text-center mb-2" style="background-color: #ff9faf; color: #fff;">
+			<h3 class="p-2">การออกกำลังกาย</h3>
+		</div>
+
+		<div class="p-4">
+			<div class="row">
+				<div class="col-md-3">
+					<div class="form-group">
+					    <select class="form-control" id="exampleFormControlSelect1">
+					      	<option>เฉพาะส่วน</option>
+					      	<option>หน้าอก</option>
+					      	<option>ต้นขา</option>
+					      	<option>แขน</option>
+					      	<option>หน้าท้อง</option>
+					    </select>
+				 	</div>
+				</div>
+				<div class="col-md-3">
+					<div class="form-group">
+					    <select class="form-control" id="exampleFormControlSelect1">
+					      	<option>ลดน้ำหนัก</option>
+					      	<option>นน.เกิน</option>
+					    </select>
+				 	</div>
+				</div>
+				<div class="col-md-3">
+					<div class="form-group">
+					    <select class="form-control" id="exampleFormControlSelect1">
+					      	<option>เพิ่มกล้ามเนื้อ</option>
+					      	<option>หน้าอก</option>
+					      	<option>ต้นขา</option>
+					      	<option>แขน</option>
+					      	<option>หน้าท้อง</option>
+					    </select>
+				 	</div>
+				</div>
+				<div class="col-md-3">
+					<div class="form-group">
+					    <select class="form-control" id="exampleFormControlSelect1">
+					      	<option>ลดต้นขา</option>
+					      	<option>โปรแกรมวิ่ง</option>
+					      	<option>คาร์ดิโอ</option>
+					      	<option>ง่ายๆ</option>
+					    </select>
+				 	</div>
+				</div>
+				<div class="col-md-12 text-center mt-2">
+			  		<button type="submit" class="btn btn-pink">ค้นหา</button>
+			  	</div>
+			</div>
+		</div>
+
+		<!-- video -->
+		<div class="p-5">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="videosList">           
+						<div class="video" style="background-image: url('images/Photo_video1.jpg');">
+							<div class="iconplay">
+								<i class="fa fa-play-circle"></i>
+							</div>
+						    <video class="thevideo" loop preload="none">
+						    	<!-- เปลี่ยนวิดีโอ -->
+					      		<source src="video/Photo_video1.mp4" type="video/mp4">
+						    </video>
+					  	</div>
+					</div>
+				</div>
+				
+				<div class="col-md-6">
+					<div class="videosList">           
+						<div class="video" style="background-image: url('images/Photo_video2.jpg');">
+							<div class="iconplay">
+								<i class="fa fa-play-circle"></i>
+							</div>
+						    <video class="thevideo" loop preload="none">
+						    	<!-- เปลี่ยนวิดีโอ -->
+					      		<source src="video/Photo_video2.mp4" type="video/mp4">
+						    </video>
+					  	</div>
+					</div>
+				</div>
+
+				<div class="col-md-6">
+					<div class="videosList">           
+						<div class="video" style="background-image: url('images/Photo_video3.jpg'); ">
+							<div class="iconplay">
+								<i class="fa fa-play-circle"></i>
+							</div>
+						    <video class="thevideo" loop preload="none">
+						    	<!-- เปลี่ยนวิดีโอ -->
+					      		<source src="video/Photo_video3.mp4" type="video/mp4">
+						    </video>
+					  	</div>
+					</div>
+				</div>
+
+				<div class="col-md-6">
+					<div class="videosList">           
+						<div class="video" style="background-image: url('images/Photo_video4.jpg');">
+							<div class="iconplay">
+								<i class="fa fa-play-circle"></i>
+							</div>
+						    <video class="thevideo" loop preload="none">
+						    	<!-- เปลี่ยนวิดีโอ -->
+					      		<source src="video/Photo_video4.mp4" type="video/mp4">
+						    </video>
+					  	</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<!-- end-->
+		<div style="background-color: #ef3e6e;">
+			<div class="text-center mb-2" style="background-color: #ff9faf; color: #fff;">
+				<h3 class="p-2">สำหรับผู้หญิง</h3>
+			</div>
+
+			
+				<div class="p-5">
+				<div class="row">
+					<div class="col-md-4 pn">
+						<img src="images/pn1.jpg">
+					</div>
+					<div class="col-md-4 pn">
+						<img src="images/pn2.jpg">
+						
+					</div>
+					<div class="col-md-4 pn">
+						<img src="images/pn3.jpg">
+						
+					</div>
+
+				</div>
+				
+				 </div>
+		</div>
+
+		<!-- footer-->
+		<div style="background-color: #1b0000;" class="p-2">
+			<div class="text-center" style="color: #ef3e6e; font-size: 24px;">
+				<i class="fa fa-facebook-square mr-2"></i>
+				<i class="fa fa-twitter-square mr-2"></i>
+				<i class="fa fa-phone-square mr-2"></i>
+				<i class="fa fa-instagram mr-2"></i>
+				<p style="font-family: 'bebas_neueregular';">copyright 2020, www.perfectpro.com</p>
+			</div>
+		</div>
+
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="js/scriptPlayvideo.js"></script>
+	</body>
+</html>
+
+<script language="JavaScript">
+<!--
+function calculateBmi() {
+	var weight = $("input#weightBmi").val();
+	var height = $("input#heightBmi").val();
+
+	if(weight > 0 && height > 0){	
+	var finalBmi = weight/(height/100*height/100)
+	document.getElementById("valueBMI").value = finalBmi;
+	}
+	else{
+		alert("กรุณากรอกข้อมูลให้ครบถ้วน")
+	}
+}
+//-->
+</script>
